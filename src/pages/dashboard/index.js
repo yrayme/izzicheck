@@ -39,13 +39,13 @@ export default function Dashboard() {
   ]
   return (
     <WithAuth safe={true}>
-      <Box px={4} mt={10}
+      <Box px={4} mt={10} pl={{xs: 11, md: 4}}
         sx={{
           '& .icon-dashboard':{
             color: "white",
             height: 40,
             width: 40
-          }
+          },
         }}
       >
         <Grid container spacing={2}>

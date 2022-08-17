@@ -292,9 +292,9 @@ const Nav = styled.nav`
   margin-left: 20px;
   @media (max-width: 768px) {
     width: ${(props) => (props.primary ? '300px' : '60px')};
-    transition: initial;
+    // transition: initial;
     position: absolute;
-    overflow: hidden;
+    // overflow: hidden;
     z-index: 400;
     bottom: 0;
     top: 0;

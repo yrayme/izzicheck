@@ -258,7 +258,7 @@ export default function CustomizedTables({search, setSearch, loadingTable, chang
     
     return ( 
       <>    
-        <Grid container mt={5} pl={{xs: 5, md: 0}}> 
+        <Grid container mt={8} pl={{xs: 7, md: 0}}> 
           <Grid item xs={12} md={8}>
               <Typography sx={{color: theme.colorWhite, fontSize: "40px", fontWeight: 600}}>{tableData.title}</Typography>
           </Grid>

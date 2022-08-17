@@ -11,20 +11,21 @@ export default function LayoutMenuLeft(props) {
       backgroundImage: "url('/assets/bg2.png')",
       backgroundSize: "100% 100%",
       height: {xs:"100%", md: "100vh"},
+      position: 'relative'
   }
 
   return (
     <Box sx={styleFondo}>
-    <Box sx={{position: "absolute", left: 0, bottom: 0, width: "100%", display: {xs: "none", md: "block"}}}>
-      <img src="/assets/Wave.png" alt="image" style={{width: "100%"}}/>
-    </Box>
-        <Main>
-            <MenuLeft />
-            <DivChildren>
-              <Navbar/>
-                {children}
-            </DivChildren>
-        </Main>
+      <Main>
+          <MenuLeft />
+          <DivChildren>
+            <Navbar/>
+              {children}
+          </DivChildren>
+      </Main>
+      <Box sx={{position: "absolute", left: 0, bottom: 0, width: "100%", display: {xs: "none", md: "block"}}}>
+        <img src="/assets/Wave.png" alt="image" style={{width: "100%"}}/>
+      </Box>
     </Box>
   )
 }
